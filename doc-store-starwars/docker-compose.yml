@@ -1,0 +1,10 @@
+version: '3'
+services:
+  event-store:
+    ports:
+     - "7001:7001"
+    image: "ianmorgan/event-store"
+  doc-store:
+    ports:
+      - "7002:7002"
+    image: "ianmorgan/doc-store"
